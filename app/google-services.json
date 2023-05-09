@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "931694540749",
+    "project_id": "tfgtours-9b1d3",
+    "storage_bucket": "tfgtours-9b1d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931694540749:android:ff13dde072992a9f28b684",
+        "android_client_info": {
+          "package_name": "com.example.tfgtours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931694540749-7i8s21n20s6rfp359vr4ltdka5d436kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBseLvwroux5gD1pj-4pOcIN_ERj6ODvY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931694540749-7i8s21n20s6rfp359vr4ltdka5d436kv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
