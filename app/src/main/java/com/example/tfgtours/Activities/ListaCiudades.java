@@ -139,8 +139,8 @@ public class ListaCiudades extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PETICION1 && resultCode == Activity.RESULT_OK) {
-            int posicion = data.getIntExtra(DetallesCiudadActivity.EXTRA_POSICION_DEVUELTA,-1);
-            String tipo = data.getStringExtra(DetallesCiudadActivity.EXTRA_TIPO);
+            int posicion = data.getIntExtra(DetallesCiudad.EXTRA_POSICION_DEVUELTA,-1);
+            String tipo = data.getStringExtra(DetallesCiudad.EXTRA_TIPO);
             if(tipo.equalsIgnoreCase("edicion"))
             {
                 adaptadorCiudad.notifyItemChanged(posicion);

@@ -2,8 +2,6 @@ package com.example.tfgtours.Clases;
 import android.graphics.Bitmap;
 import java.io.Serializable;
 import java.util.Objects;
-public class Ciudades {
-
 
     public class Ciudades implements Serializable {
         private String nombre;
@@ -56,5 +54,5 @@ public class Ciudades {
                     ", descripcion='" + descripcion + '\'' +
                     '}';
         }
-    }
+
 }

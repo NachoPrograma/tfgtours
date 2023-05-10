@@ -72,7 +72,7 @@ public class DetallesCiudad extends AppCompatActivity {
         Intent intent = getIntent();
         if(intent != null)
         {
-            Ciudades p = (Ciudades)intent.getSerializableExtra(CiudadViewHolder.EXTRA_ALUMNO_ITEM);
+            Ciudades p = (Ciudades)intent.getSerializableExtra(CiudadViewHolder.EXTRA_CIUDAD_ITEM);
             edt_detalles_nombre.setText(p.getNombre());
             edt_detalles_descripcion.setText(p.getDescripcion());
             id_antiguo = p.getNombre();

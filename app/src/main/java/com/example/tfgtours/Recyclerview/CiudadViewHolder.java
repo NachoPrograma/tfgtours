@@ -19,12 +19,12 @@ import com.example.tfgtours.Utilidades.ImagenesBlobBitmap;
 
 public class CiudadViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    public static final String EXTRA_ALUMNO_ITEM = "es.joseljg.ciudadviewholder.ciudad";
+    public static final String EXTRA_CIUDAD_ITEM = "es.joseljg.ciudadviewholder.ciudad";
     public static final String EXTRA_ALUMNO_IMAGEN = "es.joseljg.ciudadviewholder.imagenciudad";
     public static final String EXTRA_POSICION_CASILLA = "es.joseljg.ciudadviewholder.posicion";
     // atributos
     private TextView txt_item_nombre;
-    private TextView txt_item_curso;
+    private TextView txt_item_descripcion;
     private ImageView img_item_ciudad;
     //-------------------------------------
     private ListaCiudadAdapter lpa;
@@ -64,11 +64,11 @@ public class CiudadViewHolder extends RecyclerView.ViewHolder implements View.On
     }
 
     public TextView getTxt_item_curso() {
-        return txt_item_curso;
+        return txt_item_descripcion;
     }
 
     public void setTxt_item_curso(TextView txt_item_curso) {
-        this.txt_item_curso = txt_item_curso;
+        this.txt_item_descripcion = txt_item_descripcion;
     }
 
     public ListaCiudadAdapter getLpa() {
@@ -84,7 +84,7 @@ public class CiudadViewHolder extends RecyclerView.ViewHolder implements View.On
         int posicion = getLayoutPosition();
         Ciudades p = lpa.getCiudades().get(posicion);
         Intent intent = new Intent(lpa.getContexto(), DetallesCiudad.class);
-        intent.putExtra(EXTRA_ALUMNO_ITEM,p);
+        intent.putExtra(EXTRA_CIUDAD_ITEM,p);
         img_item_ciudad.buildDrawingCache();
         Bitmap foto_bm = img_item_ciudad.getDrawingCache();
         intent.putExtra(EXTRA_ALUMNO_IMAGEN, ImagenesBlobBitmap.bitmap_to_bytes_png(foto_bm));
