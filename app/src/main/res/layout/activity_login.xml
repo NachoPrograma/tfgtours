@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activities.Login">
 
     <Button
         android:id="@+id/bt_registrarse"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:onClick="registrarLogin"
+        android:onClick="registrarUsuario"
         android:text="Registrarse"
         app:layout_constraintEnd_toEndOf="@+id/bt_loguearse"
         app:layout_constraintHorizontal_bias="0.0"

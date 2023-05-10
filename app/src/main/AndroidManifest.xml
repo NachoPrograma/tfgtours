@@ -13,13 +13,19 @@
         android:theme="@style/Theme.Tfgtours"
         tools:targetApi="31">
         <activity
-            android:name=".Registrar"
+            android:name=".DetallesCiudad"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Activities.ListaCiudades"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.Registrar"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
             android:exported="false" />
     </application>
 

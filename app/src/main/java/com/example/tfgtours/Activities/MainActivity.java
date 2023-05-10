@@ -1,10 +1,13 @@
-package com.example.tfgtours;
+package com.example.tfgtours.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.tfgtours.Activities.Login;
+import com.example.tfgtours.R;
 
 public class MainActivity extends AppCompatActivity {
 
